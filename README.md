@@ -9,7 +9,7 @@
 ## Steps to Reproduce
 
 1. Clone this repository
-2. Run `make build-rust build-ios`
+2. Run `make build`
 3. Run `ios-deploy` with the `--justlaunch` flag, so a command like this:
 
 ```sh
