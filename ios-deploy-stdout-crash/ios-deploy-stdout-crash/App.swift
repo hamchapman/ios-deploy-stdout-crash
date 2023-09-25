@@ -4,9 +4,7 @@ import SwiftUI
 struct iOSDeployCrashApp: App {
 
     init() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            print("This will crash when launching with ios-deploy --justlaunch!")
-        }
+        FileHandle.standardOutput.write("lol".data(using: .utf8)!)
     }
 
     var body: some Scene {
